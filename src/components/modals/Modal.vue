@@ -42,10 +42,10 @@ export default {
     },
     methods: {
         async submitForm() {
-            const apiUrl = window.location.hostname === 'localhost' ?
-                'http://localhost/sendmail.php' : 
-                '/netlify/functions/sendmail';  
-
+            // const apiUrl = window.location.hostname === 'localhost' ?
+            //     'http://localhost/sendmail.php' : 
+            //     '/netlify/functions/sendmail';  
+            const apiUrl = '/netlify/functions/sendmail.js';  
             try {
                 const response = await axios.post(apiUrl, this.formData);
                 console.log(response.data);
