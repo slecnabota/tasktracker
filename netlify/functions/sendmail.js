@@ -39,7 +39,7 @@ exports.handler = async (event) => {
         console.log(error)
         return {
             statusCode: 500,
-            body: JSON.stringify({ message: "Failed to send email", error: error.message })
+            body: JSON.stringify({ message: "Failed to send email", error: error.toString() })
         };
     }
 };
