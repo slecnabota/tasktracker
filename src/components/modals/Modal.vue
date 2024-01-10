@@ -45,7 +45,7 @@ export default {
             // const apiUrl = window.location.hostname === 'localhost' ?
             //     'http://localhost/sendmail.php' : 
             //     '/netlify/functions/sendmail';  
-            const apiUrl = '/.netlify/functions/sendmail';  
+            const apiUrl = 'https://poetic-cheesecake-fd5f5a.netlify.app/.netlify/functions/sendmail';  
             try {
                 const response = await axios.post(apiUrl, this.formData);
                 console.log(response.data);
